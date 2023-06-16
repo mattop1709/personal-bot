@@ -42,7 +42,7 @@ export async function POST(request: Request) {
 
     const response = await chain.call({
       question: sanitizedQuestion,
-      chat_history: history || [],
+      chat_history: [],
     });
     ///////////// WHERE MAGIC HAPPENS /////////////
 
